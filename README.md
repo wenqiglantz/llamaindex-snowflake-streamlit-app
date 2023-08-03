@@ -17,7 +17,7 @@ Add `.env` file at the project root and replace placeholder with your API key:
 OPENAI_API_KEY=<YOUR-API-KEY>
 ```
 
-Add `credentials.json` at project root, replace placeholders with your Snowflake connection details:
+Add `credentials.json` at the project root, replace placeholders with your Snowflake connection details:
 ```
 {
   "account": "<YOUR-ORG>-<YOUR-ACCOUNT>",
