@@ -11,6 +11,8 @@ conda create --name py38_env
 conda activate py38_env
 pip install -r requirements.txt
 ```
+Please note, the version incompatibility error is expected.  There is a [known issue](https://github.com/snowflakedb/snowflake-sqlalchemy/issues/380) with ```snowflake-sqlalchem``` library.  Until that issue is resolved, we continue with our [workaround](https://github.com/snowflakedb/snowflake-sqlalchemy/issues/380#issuecomment-1470762025) from the ```utils.py``` file.  When we trigger the following ```streamlit run``` command to start our app, the workaround will take effect, thus allowing us to run our app in Streamlit to query Snowflake data using text-to-SQL.
+
 
 Add `.env` file at the project root and replace placeholder with your API key:
 ```
